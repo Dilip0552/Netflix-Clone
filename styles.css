@@ -5,6 +5,9 @@
 .white-border:hover{
     border:2px white solid;
 }
+#body-page{
+    background-color: black;
+}
 
 #web-top{
     background-image: url(download.jpeg);
@@ -21,13 +24,13 @@
 #web-top::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 150%;
+    width: 99%;
     height: 100px;
     background-image: linear-gradient(to bottom,rgba(19, 19, 147,0.7) 6%,transparent 10%);
-    border-radius:  50% 50% 0 0;
+    border-radius:  100% 100% 0 0;
     border-top-color: #fa1d11;
     border-width: 3px;
     border-style: solid;
@@ -65,7 +68,7 @@
 
 }
 
-#lang:active{
+#lang:focus{
     border:2px white solid;
 }
 
@@ -235,6 +238,35 @@
     font-size: 26px;
     font-weight: 600;
     font-family:  "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+}
+
+#trending-section{
+    background-color: rgba(0, 0, 0, 1);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#trending-section h2{
+    color:white;
+    font-family:  "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+
+}
+
+.select-mod{
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    border:1px grey solid;
+    border-radius: 4px;
+    color:whitesmoke;
+    font-size: 17px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+.select-mod:focus{
+    border:2px white solid;
 
 
+}
+.select-mod option{
+    color:black
 }
