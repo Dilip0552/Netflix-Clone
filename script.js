@@ -22,7 +22,7 @@ new Swiper('.card-wrapper', {
             slidesPerView:1
         },
         768:{
-            slidesPerView:2
+            slidesPerView:4
         },
         1024:{
             slidesPerView:6
@@ -30,3 +30,17 @@ new Swiper('.card-wrapper', {
     }
   
   });
+
+var toggle="block"
+
+function show(id){
+  element=document.getElementById(`${id}-ans`);
+  console.log(`${id}-ans`)
+  element.style.display=toggle
+  if (toggle==="block"){
+    toggle="none"
+}
+  else{
+    toggle="block"
+}
+}
