@@ -34,7 +34,7 @@ new Swiper('.card-wrapper', {
 var toggle="block"
 
 function show(id){
-  element=document.getElementById(`${id}-ans`);
+  const element=document.getElementById(`${id}-ans`);
   console.log(`${id}-ans`)
   element.style.display=toggle
   if (toggle==="block"){
